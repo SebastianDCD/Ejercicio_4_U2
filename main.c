@@ -9,7 +9,7 @@ void main(void)
 	TIMER_A0->CCR[0] = 65000;   //Valor maximo de cuenta del temporizador
 	TIMER_A0->CTL = TIMER_A_CTL_TASSEL_2 | TIMER_A_CTL_MC_1 | TIMER_A_CTL_CLR;
 	//Temporizador de A0, modo de cuenta ascendente, borramos registro TAR de la cuenta
-
+	//otro comentario para nuevo commit
 	while(1)
 	{   //Comprobamos si la bandera A0 esta establecida
 	    if((TIMER_A0->CTL & TIMER_A_CTL_IFG) != 0)  //
